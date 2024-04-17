@@ -38,8 +38,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonPlayerVsComputer = new System.Windows.Forms.RadioButton();
+            this.radioButtonPlayerVsPlayer = new System.Windows.Forms.RadioButton();
             this.button11 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -160,27 +160,28 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Valitse pelimuoto:";
             // 
-            // radioButton1
+            // radioButtonPlayerVsComputer
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(382, 92);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(73, 17);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Tietokone";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButtonPlayerVsComputer.AutoSize = true;
+            this.radioButtonPlayerVsComputer.Location = new System.Drawing.Point(382, 92);
+            this.radioButtonPlayerVsComputer.Name = "radioButtonPlayerVsComputer";
+            this.radioButtonPlayerVsComputer.Size = new System.Drawing.Size(125, 17);
+            this.radioButtonPlayerVsComputer.TabIndex = 10;
+            this.radioButtonPlayerVsComputer.TabStop = true;
+            this.radioButtonPlayerVsComputer.Text = "Pelaaja vs Tietokone";
+            this.radioButtonPlayerVsComputer.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioButtonPlayerVsPlayer
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(382, 116);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(43, 17);
-            this.radioButton2.TabIndex = 11;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "1v1";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButtonPlayerVsPlayer.AutoSize = true;
+            this.radioButtonPlayerVsPlayer.Location = new System.Drawing.Point(382, 116);
+            this.radioButtonPlayerVsPlayer.Name = "radioButtonPlayerVsPlayer";
+            this.radioButtonPlayerVsPlayer.Size = new System.Drawing.Size(112, 17);
+            this.radioButtonPlayerVsPlayer.TabIndex = 11;
+            this.radioButtonPlayerVsPlayer.TabStop = true;
+            this.radioButtonPlayerVsPlayer.Text = "Pelaaja vs Pelaaja";
+            this.radioButtonPlayerVsPlayer.UseVisualStyleBackColor = true;
+            this.radioButtonPlayerVsPlayer.CheckedChanged += new System.EventHandler(this.radioButtonPlayerVsPlayer_CheckedChanged);
             // 
             // button11
             // 
@@ -198,8 +199,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(598, 371);
             this.Controls.Add(this.button11);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radioButtonPlayerVsPlayer);
+            this.Controls.Add(this.radioButtonPlayerVsComputer);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -231,8 +232,8 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButtonPlayerVsComputer;
+        private System.Windows.Forms.RadioButton radioButtonPlayerVsPlayer;
         private System.Windows.Forms.Button button11;
     }
 }
