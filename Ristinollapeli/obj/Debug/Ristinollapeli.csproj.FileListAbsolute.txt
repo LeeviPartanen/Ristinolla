@@ -1,0 +1,10 @@
+C:\Users\s3pale01\OneDrive - OSAO\Ohjelmointi\C#\Ristinollapeli_Näyttötehtävä\Ristinollapeli\bin\Debug\Ristinollapeli.exe.config
+C:\Users\s3pale01\OneDrive - OSAO\Ohjelmointi\C#\Ristinollapeli_Näyttötehtävä\Ristinollapeli\bin\Debug\Ristinollapeli.exe
+C:\Users\s3pale01\OneDrive - OSAO\Ohjelmointi\C#\Ristinollapeli_Näyttötehtävä\Ristinollapeli\bin\Debug\Ristinollapeli.pdb
+C:\Users\s3pale01\OneDrive - OSAO\Ohjelmointi\C#\Ristinollapeli_Näyttötehtävä\Ristinollapeli\obj\Debug\Ristinollapeli.csproj.AssemblyReference.cache
+C:\Users\s3pale01\OneDrive - OSAO\Ohjelmointi\C#\Ristinollapeli_Näyttötehtävä\Ristinollapeli\obj\Debug\Ristinollapeli.Form1.resources
+C:\Users\s3pale01\OneDrive - OSAO\Ohjelmointi\C#\Ristinollapeli_Näyttötehtävä\Ristinollapeli\obj\Debug\Ristinollapeli.Properties.Resources.resources
+C:\Users\s3pale01\OneDrive - OSAO\Ohjelmointi\C#\Ristinollapeli_Näyttötehtävä\Ristinollapeli\obj\Debug\Ristinollapeli.csproj.GenerateResource.cache
+C:\Users\s3pale01\OneDrive - OSAO\Ohjelmointi\C#\Ristinollapeli_Näyttötehtävä\Ristinollapeli\obj\Debug\Ristinollapeli.csproj.CoreCompileInputs.cache
+C:\Users\s3pale01\OneDrive - OSAO\Ohjelmointi\C#\Ristinollapeli_Näyttötehtävä\Ristinollapeli\obj\Debug\Ristinollapeli.exe
+C:\Users\s3pale01\OneDrive - OSAO\Ohjelmointi\C#\Ristinollapeli_Näyttötehtävä\Ristinollapeli\obj\Debug\Ristinollapeli.pdb
