@@ -29,23 +29,18 @@ namespace Ristinollapeli
         {
             if (click1 == 0)
             {
-                if (playerVsPlayerMode)    // Tarkistaa, onko kahden pelaajan pelimuoto valittu
+                if (turn % 2 != 0)    // Tarkistaa, kumman pelaajan vuoro on
                 {
-                    if (turn % 2 != 0)    // Tarkistaa, kumman pelaajan vuoro on
-                    {
-                        button1.Text = "X";
-                    }
-                    else
-                    {
-                        button1.Text = "O";
-                    }
-                    turn++;
-                    click1++;
+                    button1.Text = "X";
+                    button1.Enabled = false;
                 }
                 else
                 {
-                    MessageBox.Show("Valitse pelimuoto", "Huomio");
+                    button1.Text = "O";
+                    button1.Enabled = false;
                 }
+                turn++;
+                click1++;
             }
             else
             {
@@ -59,23 +54,18 @@ namespace Ristinollapeli
         {
             if (click2 == 0)
             {
-                if (playerVsPlayerMode)
+                if (turn % 2 != 0)
                 {
-                    if (turn % 2 != 0)
-                    {
-                        button2.Text = "X";
-                    }
-                    else
-                    {
-                        button2.Text = "O";
-                    }
-                    turn++;
-                    click2++;
+                    button2.Text = "X";
+                    button2.Enabled = false;
                 }
                 else
                 {
-                    MessageBox.Show("Valitse pelimuoto", "Huomio");
-                }   
+                    button2.Text = "O";
+                    button2.Enabled = false;
+                }
+                turn++;
+                click2++;
             }
             else
             {
@@ -89,23 +79,18 @@ namespace Ristinollapeli
         {
             if (click3 == 0)
             {
-                if (playerVsPlayerMode)
+                if (turn % 2 != 0)
                 {
-                    if (turn % 2 != 0)
-                    {
-                        button3.Text = "X";
-                    }
-                    else
-                    {
-                        button3.Text = "O";
-                    }
-                    turn++;
-                    click3++;
+                    button3.Text = "X";
+                    button3.Enabled = false;
                 }
                 else
                 {
-                    MessageBox.Show("Valitse pelimuoto", "Huomio");
+                    button3.Text = "O";
+                    button3.Enabled = false;
                 }
+                turn++;
+                click3++;
             }
             else
             {
@@ -119,23 +104,18 @@ namespace Ristinollapeli
         {
             if (click4 == 0)
             {
-                if (playerVsPlayerMode)
+                if (turn % 2 != 0)
                 {
-                    if (turn % 2 != 0)
-                    {
-                        button4.Text = "X";
-                    }
-                    else
-                    {
-                        button4.Text = "O";
-                    }
-                    turn++;
-                    click4++;
+                    button4.Text = "X";
+                    button4.Enabled = false;
                 }
                 else
                 {
-                    MessageBox.Show("Valitse pelimuoto", "Huomio");
+                    button4.Text = "O";
+                    button4.Enabled = false;
                 }
+                turn++;
+                click4++;
             }
             else
             {
@@ -149,23 +129,18 @@ namespace Ristinollapeli
         {
             if (click5 == 0)
             {
-                if (playerVsPlayerMode)
+                if (turn % 2 != 0)
                 {
-                    if (turn % 2 != 0)
-                    {
-                        button5.Text = "X";
-                    }
-                    else
-                    {
-                        button5.Text = "O";
-                    }
-                    turn++;
-                    click5++;
+                    button5.Text = "X";
+                    button5.Enabled = false;
                 }
                 else
                 {
-                    MessageBox.Show("Valitse pelimuoto", "Huomio");
+                    button5.Text = "O";
+                    button5.Enabled = false;
                 }
+                turn++;
+                click5++;   
             }
             else
             {
@@ -179,23 +154,19 @@ namespace Ristinollapeli
         {
             if (click6 == 0)
             {
-                if (playerVsPlayerMode)
+                if (turn % 2 != 0)
                 {
-                    if (turn % 2 != 0)
-                    {
-                        button6.Text = "X";
-                    }
-                    else
-                    {
-                        button6.Text = "O";
-                    }
-                    turn++;
-                    click6++;
+                    button6.Text = "X";
+                    button6.Enabled = false;
                 }
                 else
                 {
-                    MessageBox.Show("Valitse pelimuoto", "Huomio");
+                    button6.Text = "O";
+                    button6.Enabled = false;
                 }
+                turn++;
+                click6++;
+                
             }
             else
             {
@@ -209,23 +180,18 @@ namespace Ristinollapeli
         {
             if (click7 == 0)
             {
-                if (playerVsPlayerMode)
+                if (turn % 2 != 0)
                 {
-                    if (turn % 2 != 0)
-                    {
-                        button7.Text = "X";
-                    }
-                    else
-                    {
-                        button7.Text = "O";
-                    }
-                    turn++;
-                    click7++;
+                    button7.Text = "X";
+                    button7.Enabled = false;
                 }
                 else
                 {
-                    MessageBox.Show("Valitse pelimuoto", "Huomio");
+                    button7.Text = "O";
+                    button7.Enabled = false;
                 }
+                turn++;
+                click7++;
             }
             else
             {
@@ -239,23 +205,19 @@ namespace Ristinollapeli
         {
             if (click8 == 0)
             {
-                if (playerVsPlayerMode)
+
+                if (turn % 2 != 0)
                 {
-                    if (turn % 2 != 0)
-                    {
-                        button8.Text = "X";
-                    }
-                    else
-                    {
-                        button8.Text = "O";
-                    }
-                    turn++;
-                    click8++;
+                    button8.Text = "X";
+                    button8.Enabled = false;
                 }
                 else
                 {
-                    MessageBox.Show("Valitse pelimuoto", "Huomio");
+                    button8.Text = "O";
+                    button8.Enabled = false;
                 }
+                turn++;
+                click8++;
             }
             else
             {
@@ -269,23 +231,18 @@ namespace Ristinollapeli
         {
             if (click9 == 0)
             {
-                if (playerVsPlayerMode)
+                if (turn % 2 != 0)
                 {
-                    if (turn % 2 != 0)
-                    {
-                        button9.Text = "X";
-                    }
-                    else
-                    {
-                        button9.Text = "O";
-                    }
-                    turn++;
-                    click9++;
+                    button9.Text = "X";
+                    button9.Enabled = false;
                 }
                 else
                 {
-                    MessageBox.Show("Valitse pelimuoto", "Huomio");
+                    button9.Text = "O";
+                    button9.Enabled = false;
                 }
+                turn++;
+                click9++;
             }
             else
             {
@@ -326,19 +283,6 @@ namespace Ristinollapeli
                 )
             {
                 MessageBox.Show("Pelaaja 2 voittaa!", "Huomio");
-            }
-        }
-
-        bool playerVsPlayerMode;
-        private void radioButtonPlayerVsPlayer_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButtonPlayerVsPlayer.Checked )
-            {
-                playerVsPlayerMode = true;
-            }
-            else
-            {
-                playerVsPlayerMode = false;
             }
         }
     }
