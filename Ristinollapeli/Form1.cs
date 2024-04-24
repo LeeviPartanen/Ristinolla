@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -253,7 +254,7 @@ namespace Ristinollapeli
 
         private void button11_Click(object sender, EventArgs e)
         {
-            Application.Restart();      // Käynnistää sovelluksen uudestaan
+            ResetGame();    // Kutsuu metodia, joka nollaa pelin
         }
 
         private void Check()
@@ -270,6 +271,17 @@ namespace Ristinollapeli
                     )
             {
                 MessageBox.Show("Pelaaja 1 voittaa!", "Huomio");
+                player1Wins++;
+                UpdateScoreboard();     // Päivittää pistetaulukon
+                button1.Enabled = false;
+                button2.Enabled = false;
+                button3.Enabled = false;
+                button4.Enabled = false;
+                button5.Enabled = false;       // Poistaa napit käytöstä, kunnes peli nollataan
+                button6.Enabled = false;
+                button7.Enabled = false;
+                button8.Enabled = false;
+                button9.Enabled = false;
             }
             else if (
                 button1.Text == "O" && button2.Text == "O" && button3.Text == "O" ||
@@ -283,7 +295,83 @@ namespace Ristinollapeli
                 )
             {
                 MessageBox.Show("Pelaaja 2 voittaa!", "Huomio");
+                player2Wins++;
+                UpdateScoreboard();
+                button1.Enabled = false;
+                button2.Enabled = false;
+                button3.Enabled = false;
+                button4.Enabled = false;
+                button5.Enabled = false;
+                button6.Enabled = false;
+                button7.Enabled = false;
+                button8.Enabled = false;
+                button9.Enabled = false;
+
             }
+            else if (
+                button1.Enabled == false && button2.Enabled == false && button3.Enabled == false &&
+                button4.Enabled == false && button5.Enabled == false && button6.Enabled == false &&
+                button7.Enabled == false && button8.Enabled == false && button9.Enabled == false
+                )
+            {
+                MessageBox.Show("Tasapeli!", "Huomio");
+            }
+        }
+
+        
+
+        private void ResetGame()
+        {
+            turn = 1;
+            click1 = 0;
+            click2 = 0;
+            click3 = 0;
+            click4 = 0;
+            click5 = 0;
+            click6 = 0;
+            click7 = 0;
+            click8 = 0;
+            click9 = 0;
+
+            button1.Enabled = true;
+            button2.Enabled = true;
+            button3.Enabled = true;
+            button4.Enabled = true;
+            button5.Enabled = true;     // Ottaa pelilaudan napit takaisin käyttöön
+            button6.Enabled = true;
+            button7.Enabled = true;
+            button8.Enabled = true;
+            button9.Enabled = true;
+
+            button1.Text = "";
+            button2.Text = "";
+            button3.Text = "";
+            button4.Text = "";
+            button5.Text = "";      // Poistaa napeista merkit
+            button6.Text = "";
+            button7.Text = "";
+            button8.Text = "";
+            button9.Text = "";
+        }
+
+        
+
+        private void UpdateScoreboard()
+        {
+            player1Score.Text = player1Wins.ToString();
+            player2Score.Text = player2Wins.ToString();
+        }
+
+        int player1Wins = 0;
+        private void player1Score_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        int player2Wins = 0;
+        private void player2Score_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
