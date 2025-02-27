@@ -6,7 +6,7 @@ Tämä sovellus on perinteinen ristinollapeli, joka on rakennettu C#-kielellä k
 Pelin tarkoituksena on täyttää 3x3-ruudun pelilauta omilla merkeillään ("X" tai "O") siten, että pelaaja saa kolme peräkkäistä merkkiä joko vaakasuoraan, pystysuoraan, tai nurkasta nurkkaan. Pelissä on mukana pistelaskuri, joka pitää kirjaa kummankin pelaajan voitoista, ja peli voidaan nollata milloin tahansa, jolloin peli alkaa alusta.
 
 ## Vuokaavio
-<img width="368" alt="Ristinollapelin vuokaavio" src="https://github.com/user-attachments/assets/8c9b16ad-d4e6-4016-871d-91599ad006cd" />
+![Uusi vuokaavio](https://github.com/user-attachments/assets/0234ccf7-6ac4-4e3c-928e-8e77a62d265d)
 
 ## Kuvakaappaukset
 ![image](https://github.com/user-attachments/assets/a4737467-23f8-4863-9974-8873514b4995)
@@ -20,17 +20,22 @@ Pelin tarkoituksena on täyttää 3x3-ruudun pelilauta omilla merkeillään ("X"
 
 ## Koodin pääkohdat
 ### Pelilogiikka
-Pelin logiikka perustuu nappeihin, joita pelaajat klikkalevat vuorotellen. Pelissä on kaksi pääfunktiota, jotka huolehtivat napin klikkaamisesta ja voittajan tarkistamisesta
-![image](https://github.com/user-attachments/assets/b3b74dae-70c0-469c-a111-d4dde155ca59)
+Pelin logiikka perustuu nappeihin, joita pelaajat klikkalevat vuorotellen. Pelissä on kaksi pääfunktiota, jotka huolehtivat napin klikkaamisesta ja voittajan tarkistamisesta.
+
+![image](https://github.com/user-attachments/assets/6098698c-9473-4074-9851-b053a030e8d2)
+
 
 ### Voittotarkistus
 Pelissä tarkistetaan, onko jollain pelaajalla kolme peräkkäistä merkkiä pelilaudalla. Tämä tehdään Chech()-metodilla.
-![image](https://github.com/user-attachments/assets/825ea8ea-4ef9-4577-8903-e13ba1d9661e)
+
+![image](https://github.com/user-attachments/assets/ae55d8cd-13d9-4dd3-bc24-16b2a4f05641)
+
 
 ### Pelin nollaus
 Pelin voi nollata milloin tahansa painamalla "Pelaa uudestaan"-nappia. Tämä palauttaa pelilaudan alkuperäiseen tilaan ja nollaa pelin edistymisen:
 
-![image](https://github.com/user-attachments/assets/919ddcf6-281f-4543-b2ec-0fab45de0a64)
+![image](https://github.com/user-attachments/assets/84d85e08-d0ff-431c-83dd-18f18294c59c)
+
 
 
 ## Jatkokehitysudeat
