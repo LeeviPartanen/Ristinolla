@@ -26,7 +26,7 @@ Pelin logiikka perustuu nappeihin, joita pelaajat klikkalevat vuorotellen. Pelis
 
 
 ### Voittotarkistus
-Pelissä tarkistetaan, onko jollain pelaajalla kolme peräkkäistä merkkiä pelilaudalla. Tämä tehdään Chech()-metodilla.
+Pelissä tarkistetaan, onko jollain pelaajalla kolme peräkkäistä merkkiä pelilaudalla. Tämä tehdään Check()-metodilla.
 
 ![image](https://github.com/user-attachments/assets/ae55d8cd-13d9-4dd3-bc24-16b2a4f05641)
 
